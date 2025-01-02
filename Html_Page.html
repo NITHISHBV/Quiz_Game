@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="CSS_Page.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <!-- Start Button -->
+        <button id="start-btn" class="btn">Start Quiz</button>
+
+        <!-- Question Container -->
+        <div id="question-container" class="hide">
+            <div id="question">Question will be displayed here</div>
+            <div id="answer-buttons"></div>
+        </div>
+
+        <!-- Next Button -->
+        <button id="next-btn" class="btn hide">Next</button>
+
+        <!-- Score Display -->
+        <div id="score-container">
+            <p>Correct Answers: <span id="right-answers">0</span></p>
+        </div>
+    </div>
+
+    <script src="JS_Page.js"></script>
+</body>
+</html>

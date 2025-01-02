@@ -1,0 +1,123 @@
+/* Resetting some styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Soft teal background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Main quiz container */
+#quiz-container {
+    text-align: center;
+    padding: 60px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    transition: transform 0.3s ease;
+}
+
+/* Hide class */
+.hide {
+    display: none;
+}
+
+/* Header/Question text */
+#question {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Score display */
+#score-container {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#right-answers {
+    color: #009688;
+}
+
+/* Buttons */
+.btn {
+    background-color: #00796b; /* Teal background for buttons */
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #004d40; /* Darker teal for hover effect */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Next Button (Styled differently) */
+#next-btn {
+    background-color: #0288d1; /* Blue background */
+}
+
+#next-btn:hover {
+    background-color: #01579b; /* Darker blue for hover effect */
+}
+
+/* Correct answer button */
+button.correct {
+    background-color: #4caf50; /* Green for correct */
+}
+
+button.correct:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Wrong answer button */
+button.wrong {
+    background-color: #f44336; /* Red for wrong */
+}
+
+button.wrong:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Adding a soft background and shadow effect */
+#quiz-container {
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Button responsiveness */
+@media (max-width: 600px) {
+    #quiz-container {
+        width: 90%;
+    }
+
+    .btn {
+        width: 100%; /* Make buttons stretch full width on smaller screens */
+        padding: 12px 0;
+        font-size: 18px;
+    }
+
+    #question {
+        font-size: 20px;
+    }
+}
